@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Card, Button } from "antd";
+
 import "./App.css";
 import useFetch from "./useFetch";
 import Question from "./components/Questions";
+import QuizComplete from "./components/QuizComplete";
 
 const URL = "./questions.json";
 const QUERY_KEY = "questions";
@@ -29,8 +30,6 @@ function App() {
 
 	const { data, isLoading } = useFetch(QUERY_KEY, URL);
 
-	console.log("data", data && data[0]);
-
 	const handleChange = (checkedValues: string[]) => {
 		setSelectedOptions(checkedValues);
 	};
@@ -39,13 +38,17 @@ function App() {
 		const selectedAnswer = selectedOptions.length > 0 ? selectedOptions[0] : "";
 		setUserAnswers((prevAnswers) => [...prevAnswers, selectedAnswer]);
 
+		console.log("currentQuestionIndex >>>", currentQuestionIndex);
+		console.log("questions.length >>>", data.length);
+
 		// If it's the last question, finish the quiz
-		if (currentQuestionIndex === questions.length - 1) {
+		if (currentQuestionIndex === data.length - 1) {
+			console.log("questions >>>", questions);
 			// Calculate the number of correct answers
-			const correctCount = questions.reduce(
+			const correctCount = data.reduce(
 				(count, question, index) =>
 					question.answer === userAnswers[index] ? count + 1 : count,
-				selectedAnswer === questions[currentQuestionIndex].answer ? 1 : 0 // Include the current answer
+				selectedAnswer === data[currentQuestionIndex].answer ? 1 : 0 // Include the current answer
 			);
 			setCorrectAnswerCount(correctCount);
 			setQuizComplete(true);
@@ -75,43 +78,12 @@ function App() {
 	// Show all questions with answers after quiz completion
 	if (quizComplete) {
 		return (
-			<div className="results-container" style={{ padding: "20px" }}>
-				<h1>Quiz Results</h1>
-				<p>
-					You have answered {correctAnswerCount} questions correctly out of 5.
-				</p>
-				{data.map((row: any, index: number) => (
-					<Card
-						key={index}
-						title={`Question ${index + 1}`}
-						style={{ width: 400, marginBottom: "20px" }}
-					>
-						<p>{row.question}</p>
-						<ul>
-							{row.options.map((option: string, idx: number) => (
-								<li
-									key={idx}
-									style={{
-										color: option === row.answer ? "green" : "black",
-									}}
-								>
-									{option} {option === row.answer && "(Correct Answer)"}
-									{option === userAnswers[index] &&
-										option !== row.answer &&
-										" (Your Answer)"}
-								</li>
-							))}
-						</ul>
-					</Card>
-				))}
-				<Button
-					type="primary"
-					onClick={handleRestart}
-					style={{ marginTop: "20px" }}
-				>
-					Restart Quiz
-				</Button>
-			</div>
+			<QuizComplete
+				data={data}
+				userAnswers={userAnswers}
+				correctAnswerCount={correctAnswerCount}
+				handleRestart={handleRestart}
+			/>
 		);
 	}
 
