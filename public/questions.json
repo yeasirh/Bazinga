@@ -1,0 +1,177 @@
+[
+	{
+		"question": "What is the capital of France?",
+		"options": ["Berlin", "Madrid", "Paris", "Rome"],
+		"answer": "Paris"
+	},
+	{
+		"question": "Who wrote 'Romeo and Juliet'?",
+		"options": [
+			"Charles Dickens",
+			"J.K. Rowling",
+			"William Shakespeare",
+			"Ernest Hemingway"
+		],
+		"answer": "William Shakespeare"
+	},
+	{
+		"question": "What is the largest planet in our solar system?",
+		"options": ["Earth", "Mars", "Jupiter", "Saturn"],
+		"answer": "Jupiter"
+	},
+	{
+		"question": "What is the boiling point of water?",
+		"options": ["90°C", "100°C", "110°C", "120°C"],
+		"answer": "100°C"
+	},
+	{
+		"question": "What is the square root of 64?",
+		"options": ["6", "7", "8", "9"],
+		"answer": "8"
+	},
+	{
+		"question": "Which is the longest river in the world?",
+		"options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+		"answer": "Nile"
+	},
+	{
+		"question": "What is the chemical symbol for water?",
+		"options": ["O2", "CO2", "H2O", "NaCl"],
+		"answer": "H2O"
+	},
+	{
+		"question": "Who painted the Mona Lisa?",
+		"options": [
+			"Vincent van Gogh",
+			"Leonardo da Vinci",
+			"Michelangelo",
+			"Claude Monet"
+		],
+		"answer": "Leonardo da Vinci"
+	},
+	{
+		"question": "What is the tallest mountain in the world?",
+		"options": ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
+		"answer": "Mount Everest"
+	},
+	{
+		"question": "Which is the fastest land animal?",
+		"options": ["Cheetah", "Lion", "Horse", "Elephant"],
+		"answer": "Cheetah"
+	},
+	{
+		"question": "What is the atomic number of hydrogen?",
+		"options": ["1", "2", "3", "4"],
+		"answer": "1"
+	},
+	{
+		"question": "Who invented the telephone?",
+		"options": [
+			"Thomas Edison",
+			"Alexander Graham Bell",
+			"Nikola Tesla",
+			"Guglielmo Marconi"
+		],
+		"answer": "Alexander Graham Bell"
+	},
+	{
+		"question": "Which planet is closest to the sun?",
+		"options": ["Earth", "Venus", "Mercury", "Mars"],
+		"answer": "Mercury"
+	},
+	{
+		"question": "What is the smallest prime number?",
+		"options": ["1", "2", "3", "5"],
+		"answer": "2"
+	},
+	{
+		"question": "Who discovered penicillin?",
+		"options": [
+			"Marie Curie",
+			"Louis Pasteur",
+			"Alexander Fleming",
+			"Isaac Newton"
+		],
+		"answer": "Alexander Fleming"
+	},
+	{
+		"question": "Which country is home to the kangaroo?",
+		"options": ["South Africa", "Australia", "India", "Brazil"],
+		"answer": "Australia"
+	},
+	{
+		"question": "Which ocean is the largest?",
+		"options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+		"answer": "Pacific"
+	},
+	{
+		"question": "What is the hardest natural substance on Earth?",
+		"options": ["Gold", "Iron", "Diamond", "Platinum"],
+		"answer": "Diamond"
+	},
+	{
+		"question": "What is the main ingredient in guacamole?",
+		"options": ["Avocado", "Tomato", "Cucumber", "Pepper"],
+		"answer": "Avocado"
+	},
+	{
+		"question": "Which country won the FIFA World Cup in 2018?",
+		"options": ["Brazil", "France", "Germany", "Argentina"],
+		"answer": "France"
+	},
+	{
+		"question": "What is the chemical symbol for gold?",
+		"options": ["Au", "Ag", "Pb", "Cu"],
+		"answer": "Au"
+	},
+	{
+		"question": "How many continents are there?",
+		"options": ["5", "6", "7", "8"],
+		"answer": "7"
+	},
+	{
+		"question": "What is the largest mammal in the world?",
+		"options": ["Elephant", "Whale Shark", "Blue Whale", "Giraffe"],
+		"answer": "Blue Whale"
+	},
+	{
+		"question": "What is the capital city of Japan?",
+		"options": ["Seoul", "Beijing", "Bangkok", "Tokyo"],
+		"answer": "Tokyo"
+	},
+	{
+		"question": "What is the most spoken language in the world?",
+		"options": ["English", "Mandarin Chinese", "Spanish", "Hindi"],
+		"answer": "Mandarin Chinese"
+	},
+	{
+		"question": "Which element is needed for breathing?",
+		"options": ["Hydrogen", "Nitrogen", "Oxygen", "Carbon"],
+		"answer": "Oxygen"
+	},
+	{
+		"question": "Which animal is known as the 'King of the Jungle'?",
+		"options": ["Tiger", "Lion", "Elephant", "Gorilla"],
+		"answer": "Lion"
+	},
+	{
+		"question": "What is the speed of light?",
+		"options": ["300,000 km/s", "150,000 km/s", "100,000 km/s", "200,000 km/s"],
+		"answer": "300,000 km/s"
+	},
+	{
+		"question": "Who was the first man to walk on the moon?",
+		"options": [
+			"Buzz Aldrin",
+			"Yuri Gagarin",
+			"Neil Armstrong",
+			"Michael Collins"
+		],
+		"answer": "Neil Armstrong"
+	},
+	{
+		"question": "What is the largest desert in the world?",
+		"options": ["Sahara", "Arctic", "Gobi", "Kalahari"],
+		"answer": "Sahara"
+	}
+]
